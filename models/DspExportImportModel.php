@@ -265,6 +265,10 @@ class DspExportImportModel
               {
                update_post_meta( $post_id, '_ubermenu_settings', unserialize($val[0]));
               }
+              elseif($custom_key == 'megamenu')
+              {
+               update_post_meta( $post_id, '_megamenu', unserialize($val[0]));
+              }
               else
               {
                $custom_post_meta[$custom_key] = $val[0];
